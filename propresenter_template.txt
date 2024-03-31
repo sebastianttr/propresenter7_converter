@@ -1,0 +1,798 @@
+application_info {
+  platform: PLATFORM_MACOS
+  platform_version {
+    major_version: 14
+    minor_version: 4
+  }
+  application: APPLICATION_PROPRESENTER
+  application_version {
+    major_version: 7
+    minor_version: 16
+    patch_version: 1
+    build: "118489346"
+  }
+}
+uuid {
+  string: "89507096-A0DD-450E-A534-08C585C6B2F1"
+}
+name: "conversion_pro7"
+background {
+}
+chord_chart {
+  platform: PLATFORM_MACOS
+}
+cue_groups {
+  group {
+    uuid {
+      string: "D73B6D1B-966C-415B-A751-22C4AFF8B1D4"
+    }
+    hotKey {
+    }
+  }
+  cue_identifiers {
+    string: "3D2E30CB-F369-482E-AC98-D104658DAADA"
+  }
+  cue_identifiers {
+    string: "4F5D6D02-C673-4307-8782-3F572553D84E"
+  }
+  cue_identifiers {
+    string: "8326F15E-608E-44DB-A1D6-46D07BFF8FDF"
+  }
+  cue_identifiers {
+    string: "59974B68-40B8-4A3D-8893-A0D303BB5AAF"
+  }
+}
+cues {
+  uuid {
+    string: "3D2E30CB-F369-482E-AC98-D104658DAADA"
+  }
+  completion_action_type: COMPLETION_ACTION_TYPE_LAST
+  hot_key {
+  }
+  actions {
+    uuid {
+      string: "1D9E328A-0664-4A77-BEC7-D7E4566B459C"
+    }
+    isEnabled: true
+    type: ACTION_TYPE_PRESENTATION_SLIDE
+    slide {
+      presentation {
+        base_slide {
+          elements {
+            element {
+              uuid {
+                string: "F3299A85-23DE-4FB3-A938-B3FE1CAD038F"
+              }
+              name: "Verse"
+              bounds {
+                origin {
+                  x: 150
+                  y: 100
+                }
+                size {
+                  width: 1620
+                  height: 880
+                }
+              }
+              opacity: 1
+              path {
+                closed: true
+                points {
+                  point {
+                  }
+                  q0 {
+                  }
+                  q1 {
+                  }
+                }
+                points {
+                  point {
+                    x: 1
+                  }
+                  q0 {
+                    x: 1
+                  }
+                  q1 {
+                    x: 1
+                  }
+                }
+                points {
+                  point {
+                    x: 1
+                    y: 1
+                  }
+                  q0 {
+                    x: 1
+                    y: 1
+                  }
+                  q1 {
+                    x: 1
+                    y: 1
+                  }
+                }
+                points {
+                  point {
+                    y: 1
+                  }
+                  q0 {
+                    y: 1
+                  }
+                  q1 {
+                    y: 1
+                  }
+                }
+                shape {
+                  type: TYPE_RECTANGLE
+                }
+              }
+              fill {
+                color {
+                  red: 0.13
+                  green: 0.59
+                  blue: 0.95
+                  alpha: 1
+                }
+              }
+              stroke {
+                width: 3
+                color {
+                  red: 1
+                  green: 1
+                  blue: 1
+                  alpha: 1
+                }
+              }
+              shadow {
+                angle: 315
+                offset: 5
+                radius: 5
+                color {
+                  alpha: 1
+                }
+                opacity: 0.75
+              }
+              feather {
+                radius: 0.05
+              }
+              text {
+                attributes {
+                  font {
+                    name: "HelveticaNeue"
+                    size: 42
+                    family: "Helvetica Neue"
+                  }
+                  text_solid_fill {
+                    red: 1
+                    green: 1
+                    blue: 1
+                    alpha: 1
+                  }
+                  underline_style {
+                  }
+                  paragraph_style {
+                    alignment: ALIGNMENT_CENTER
+                    line_height_multiple: 1
+                    default_tab_interval: 84
+                    text_list {
+                    }
+                  }
+                  strikethrough_style {
+                  }
+                }
+                shadow {
+                  angle: 315
+                  offset: 5
+                  radius: 5
+                  color {
+                    alpha: 1
+                  }
+                  opacity: 0.75
+                }
+                rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\deftab1680\n\\pard\\pardeftab1680\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs84 \\cf2 Bine-a\\uc0\\u539 i venit azi la altar, \\\'cen casa Domnului Sf\\\'e2nt\\\nS\\uc0\\u259  \\\'eemplini\\u539 i ce Dumnezeu, A r\\\'e2nduit pe p\\u259 m\\\'e2nt\\\nS\\uc0\\u259  v\\u259  iubi\\u539 i \\u537 i s\\u259  tr\\u259 i\\u539 i, spre slava lui Dumnezeu\\\nF\\uc0\\u259 c\\\'e2nd a\\u537 a, de ve\\u539 i lucra, ve\\u537 nic v\\u259  ve\\u539 i bucura}"
+                vertical_alignment: VERTICAL_ALIGNMENT_MIDDLE
+                margins {
+                }
+                is_superscript_standardized: true
+                transformDelimiter: "  \342\200\242  "
+                chord_pro {
+                  color {
+                    red: 0.993
+                    green: 0.76
+                    blue: 0.032
+                    alpha: 1
+                  }
+                }
+              }
+              text_line_mask {
+              }
+            }
+            info: 3
+            text_scroller {
+              scroll_rate: 0.5
+              should_repeat: true
+              repeat_distance: 0.061728395061728392
+            }
+          }
+          size {
+            width: 1920
+            height: 1080
+          }
+          uuid {
+            string: "49E1107D-67B7-4ABD-9EDB-7DCB388DE615"
+          }
+        }
+        chord_chart {
+          platform: PLATFORM_MACOS
+        }
+      }
+    }
+  }
+  isEnabled: true
+}
+cues {
+  uuid {
+    string: "8326F15E-608E-44DB-A1D6-46D07BFF8FDF"
+  }
+  completion_action_type: COMPLETION_ACTION_TYPE_LAST
+  hot_key {
+  }
+  actions {
+    uuid {
+      string: "F86A36A1-55B1-4E34-9C6C-B40A4AA862A4"
+    }
+    isEnabled: true
+    type: ACTION_TYPE_PRESENTATION_SLIDE
+    slide {
+      presentation {
+        base_slide {
+          elements {
+            element {
+              uuid {
+                string: "E352D5BF-146B-410C-BEE5-002321C3D4E3"
+              }
+              name: "Verse"
+              bounds {
+                origin {
+                  x: 150
+                  y: 100
+                }
+                size {
+                  width: 1620
+                  height: 880
+                }
+              }
+              opacity: 1
+              path {
+                closed: true
+                points {
+                  point {
+                  }
+                  q0 {
+                  }
+                  q1 {
+                  }
+                }
+                points {
+                  point {
+                    x: 1
+                  }
+                  q0 {
+                    x: 1
+                  }
+                  q1 {
+                    x: 1
+                  }
+                }
+                points {
+                  point {
+                    x: 1
+                    y: 1
+                  }
+                  q0 {
+                    x: 1
+                    y: 1
+                  }
+                  q1 {
+                    x: 1
+                    y: 1
+                  }
+                }
+                points {
+                  point {
+                    y: 1
+                  }
+                  q0 {
+                    y: 1
+                  }
+                  q1 {
+                    y: 1
+                  }
+                }
+                shape {
+                  type: TYPE_RECTANGLE
+                }
+              }
+              fill {
+                color {
+                  red: 0.13
+                  green: 0.59
+                  blue: 0.95
+                  alpha: 1
+                }
+              }
+              stroke {
+                width: 3
+                color {
+                  red: 1
+                  green: 1
+                  blue: 1
+                  alpha: 1
+                }
+              }
+              shadow {
+                angle: 315
+                offset: 5
+                radius: 5
+                color {
+                  alpha: 1
+                }
+                opacity: 0.75
+              }
+              feather {
+                radius: 0.05
+              }
+              text {
+                attributes {
+                  font {
+                    name: "HelveticaNeue"
+                    size: 42
+                    family: "Helvetica Neue"
+                  }
+                  text_solid_fill {
+                    red: 1
+                    green: 1
+                    blue: 1
+                    alpha: 1
+                  }
+                  underline_style {
+                  }
+                  paragraph_style {
+                    alignment: ALIGNMENT_CENTER
+                    line_height_multiple: 1
+                    default_tab_interval: 84
+                    text_list {
+                    }
+                  }
+                  strikethrough_style {
+                  }
+                }
+                shadow {
+                  angle: 315
+                  offset: 5
+                  radius: 5
+                  color {
+                    alpha: 1
+                  }
+                  opacity: 0.75
+                }
+                rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\deftab1680\n\\pard\\pardeftab1680\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs84 \\cf2 C\\uc0\\u259 minul vost ne\\\'eencetat Domnului s\\u259 -I \\\'eenchina\\u539 i\\\nPe cel trudit pe cel lipsit mereu cu drag s-ajuta\\uc0\\u539 i\\\n\\uc0\\u536 i c\\\'e2nd ve\\u539 i fi \\\'een st\\\'e2mtor\\u259 ri Domnul cel bun \\u537 i milos\\\nVa fi cu voi, va sprijinit m\\\'e2na Lui Isus Hristos}"
+                vertical_alignment: VERTICAL_ALIGNMENT_MIDDLE
+                margins {
+                }
+                is_superscript_standardized: true
+                transformDelimiter: "  \342\200\242  "
+                chord_pro {
+                  color {
+                    red: 0.993
+                    green: 0.76
+                    blue: 0.032
+                    alpha: 1
+                  }
+                }
+              }
+              text_line_mask {
+              }
+            }
+            info: 3
+            text_scroller {
+              scroll_rate: 0.5
+              should_repeat: true
+              repeat_distance: 0.061728395061728392
+            }
+          }
+          size {
+            width: 1920
+            height: 1080
+          }
+          uuid {
+            string: "F03D9139-65D0-41CE-B620-D9F76DD1EABA"
+          }
+        }
+        chord_chart {
+          platform: PLATFORM_MACOS
+        }
+      }
+    }
+  }
+  isEnabled: true
+}
+cues {
+  uuid {
+    string: "4F5D6D02-C673-4307-8782-3F572553D84E"
+  }
+  completion_action_type: COMPLETION_ACTION_TYPE_LAST
+  hot_key {
+  }
+  actions {
+    uuid {
+      string: "7A634D18-3F6F-4D59-873E-D3116F9D1E9A"
+    }
+    isEnabled: true
+    type: ACTION_TYPE_PRESENTATION_SLIDE
+    slide {
+      presentation {
+        base_slide {
+          elements {
+            element {
+              uuid {
+                string: "C40AAFCE-B31F-44CB-8EAF-C883AD536655"
+              }
+              name: "Verse"
+              bounds {
+                origin {
+                  x: 150
+                  y: 100
+                }
+                size {
+                  width: 1620
+                  height: 880
+                }
+              }
+              opacity: 1
+              path {
+                closed: true
+                points {
+                  point {
+                  }
+                  q0 {
+                  }
+                  q1 {
+                  }
+                }
+                points {
+                  point {
+                    x: 1
+                  }
+                  q0 {
+                    x: 1
+                  }
+                  q1 {
+                    x: 1
+                  }
+                }
+                points {
+                  point {
+                    x: 1
+                    y: 1
+                  }
+                  q0 {
+                    x: 1
+                    y: 1
+                  }
+                  q1 {
+                    x: 1
+                    y: 1
+                  }
+                }
+                points {
+                  point {
+                    y: 1
+                  }
+                  q0 {
+                    y: 1
+                  }
+                  q1 {
+                    y: 1
+                  }
+                }
+                shape {
+                  type: TYPE_RECTANGLE
+                }
+              }
+              fill {
+                color {
+                  red: 0.13
+                  green: 0.59
+                  blue: 0.95
+                  alpha: 1
+                }
+              }
+              stroke {
+                width: 3
+                color {
+                  red: 1
+                  green: 1
+                  blue: 1
+                  alpha: 1
+                }
+              }
+              shadow {
+                angle: 315
+                offset: 5
+                radius: 5
+                color {
+                  alpha: 1
+                }
+                opacity: 0.75
+              }
+              feather {
+                radius: 0.05
+              }
+              text {
+                attributes {
+                  font {
+                    name: "HelveticaNeue"
+                    size: 42
+                    family: "Helvetica Neue"
+                  }
+                  text_solid_fill {
+                    red: 1
+                    green: 1
+                    blue: 1
+                    alpha: 1
+                  }
+                  underline_style {
+                  }
+                  paragraph_style {
+                    alignment: ALIGNMENT_CENTER
+                    line_height_multiple: 1
+                    default_tab_interval: 84
+                    text_list {
+                    }
+                  }
+                  strikethrough_style {
+                  }
+                }
+                shadow {
+                  angle: 315
+                  offset: 5
+                  radius: 5
+                  color {
+                    alpha: 1
+                  }
+                  opacity: 0.75
+                }
+                rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\deftab1680\n\\pard\\pardeftab1680\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs84 \\cf2 Domnul Isus s\\uc0\\u259  v\\u259  dea pe deplin \\\nPacea din ceruri \\uc0\\u537 i harul divin\\\nVe\\uc0\\u537 nic iubirea s\\u259  fie \\\'een voi\\\nP\\\'e2n\\uc0\\u259  \\\'een ziua de-apoi}"
+                vertical_alignment: VERTICAL_ALIGNMENT_MIDDLE
+                margins {
+                }
+                is_superscript_standardized: true
+                transformDelimiter: "  \342\200\242  "
+                chord_pro {
+                  color {
+                    red: 0.993
+                    green: 0.76
+                    blue: 0.032
+                    alpha: 1
+                  }
+                }
+              }
+              text_line_mask {
+              }
+            }
+            info: 3
+            text_scroller {
+              scroll_rate: 0.5
+              should_repeat: true
+              repeat_distance: 0.061728395061728392
+            }
+          }
+          size {
+            width: 1920
+            height: 1080
+          }
+          uuid {
+            string: "1AE5AFC2-9CA0-4A01-A6C9-F1CD849BD9BE"
+          }
+        }
+        chord_chart {
+          platform: PLATFORM_MACOS
+        }
+      }
+    }
+  }
+  isEnabled: true
+}
+cues {
+  uuid {
+    string: "59974B68-40B8-4A3D-8893-A0D303BB5AAF"
+  }
+  completion_action_type: COMPLETION_ACTION_TYPE_LAST
+  hot_key {
+  }
+  actions {
+    uuid {
+      string: "D000C6B6-09AF-47FB-BCC3-A7BBB8969450"
+    }
+    isEnabled: true
+    type: ACTION_TYPE_PRESENTATION_SLIDE
+    slide {
+      presentation {
+        base_slide {
+          elements {
+            element {
+              uuid {
+                string: "0D3B8841-D3DF-451B-A780-09DDA1C8D258"
+              }
+              name: "Verse"
+              bounds {
+                origin {
+                  x: 150
+                  y: 100
+                }
+                size {
+                  width: 1620
+                  height: 880
+                }
+              }
+              opacity: 1
+              path {
+                closed: true
+                points {
+                  point {
+                  }
+                  q0 {
+                  }
+                  q1 {
+                  }
+                }
+                points {
+                  point {
+                    x: 1
+                  }
+                  q0 {
+                    x: 1
+                  }
+                  q1 {
+                    x: 1
+                  }
+                }
+                points {
+                  point {
+                    x: 1
+                    y: 1
+                  }
+                  q0 {
+                    x: 1
+                    y: 1
+                  }
+                  q1 {
+                    x: 1
+                    y: 1
+                  }
+                }
+                points {
+                  point {
+                    y: 1
+                  }
+                  q0 {
+                    y: 1
+                  }
+                  q1 {
+                    y: 1
+                  }
+                }
+                shape {
+                  type: TYPE_RECTANGLE
+                }
+              }
+              fill {
+                color {
+                  red: 0.13
+                  green: 0.59
+                  blue: 0.95
+                  alpha: 1
+                }
+              }
+              stroke {
+                width: 3
+                color {
+                  red: 1
+                  green: 1
+                  blue: 1
+                  alpha: 1
+                }
+              }
+              shadow {
+                angle: 315
+                offset: 5
+                radius: 5
+                color {
+                  alpha: 1
+                }
+                opacity: 0.75
+              }
+              feather {
+                radius: 0.05
+              }
+              text {
+                attributes {
+                  font {
+                    name: "HelveticaNeue"
+                    size: 42
+                    family: "Helvetica Neue"
+                  }
+                  text_solid_fill {
+                    red: 1
+                    green: 1
+                    blue: 1
+                    alpha: 1
+                  }
+                  underline_style {
+                  }
+                  paragraph_style {
+                    alignment: ALIGNMENT_CENTER
+                    line_height_multiple: 1
+                    default_tab_interval: 84
+                    text_list {
+                    }
+                  }
+                  strikethrough_style {
+                  }
+                }
+                shadow {
+                  angle: 315
+                  offset: 5
+                  radius: 5
+                  color {
+                    alpha: 1
+                  }
+                  opacity: 0.75
+                }
+                rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\deftab1680\n\\pard\\pardeftab1680\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs84 \\cf2 Noi v\\uc0\\u259  iubim \\u537 i v\\u259  dorim cere\\u537 ti binecuv\\\'e2nt\\u259 ri\\\nVia\\uc0\\u539 \\u259  cu flori f\\u259 r\\u259  de nori plin\\u259  de har \\u537 i c\\\'e2nt\\u259 ri\\\nIar c\\\'e2nd pe cer va r\\uc0\\u259 s\\u259 ri soarele nostru Isus\\\nCu to\\uc0\\u539 i s\\u259  fim mireasa Lui \\\'een ziua f\\u259 r\\u259  de apus.}"
+                vertical_alignment: VERTICAL_ALIGNMENT_MIDDLE
+                margins {
+                }
+                is_superscript_standardized: true
+                transformDelimiter: "  \342\200\242  "
+                chord_pro {
+                  color {
+                    red: 0.993
+                    green: 0.76
+                    blue: 0.032
+                    alpha: 1
+                  }
+                }
+              }
+              text_line_mask {
+              }
+            }
+            info: 3
+            text_scroller {
+              scroll_rate: 0.5
+              should_repeat: true
+              repeat_distance: 0.061728395061728392
+            }
+          }
+          size {
+            width: 1920
+            height: 1080
+          }
+          uuid {
+            string: "27BBEFBB-DD23-4FC0-9496-C02930886731"
+          }
+        }
+        chord_chart {
+          platform: PLATFORM_MACOS
+        }
+      }
+    }
+  }
+  isEnabled: true
+}
+ccli {
+  song_title: "Bine-a\310\233i venit azi la altar, \303\216n casa Domnului Sf\303\242nt"
+}
+timeline {
+  duration: 300
+}
