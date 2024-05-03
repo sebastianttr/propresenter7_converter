@@ -13,38 +13,54 @@ application_info {
     build: "118489613"
   }
 }
-
 uuid {
-string: "85E043E6-1EF5-4EC5-80C4-694515CBFBB0"
+  string: "22FDF4E5-4051-4400-B5D4-F25A0166E527"
 }
-
-name: "Bine ati venit"
+name: "template_biserica"
+background {
+  color {
+  }
+}
+chord_chart {
+  platform: PLATFORM_MACOS
+}
+selected_arrangement {
+  string: "421EF814-6AB6-4799-82F8-64FD308D15A1"
+}
+arrangements {
+  uuid {
+    string: "421EF814-6AB6-4799-82F8-64FD308D15A1"
+  }
+  name: "Default"
+  group_identifiers {
+    string: "F0CF501C-4F72-469D-9BFA-DE543D4AE028"
+  }
+}
 cue_groups {
-group {
-  uuid {
-    string: "FC9FBC78-4163-4551-BDDC-70B8D0C9F36C"
+  group {
+    uuid {
+      string: "F0CF501C-4F72-469D-9BFA-DE543D4AE028"
+    }
+  }
+  cue_identifiers {
+    string: "7CCA1588-D16F-4212-B07A-910042651977"
+  }
+  cue_identifiers {
+    string: "28DA96D5-0E47-48A0-B299-7DDAF8850C98"
+  }
+  cue_identifiers {
+    string: "01F2FD91-F109-48BF-80FA-EE1710F05644"
+  }
+  cue_identifiers {
+    string: "AB061823-E304-492D-B3A0-75A985EBFCE1"
+  }
+  cue_identifiers {
+    string: "606AE0AC-AC9D-45F2-93EA-C28175D1FC3E"
   }
 }
-cue_identifiers {
-  string: "82651C9F-3CDF-45B3-8BAA-AC529C1F06D5"
-}
-cue_identifiers {
-  string: "DB376151-02EC-4564-9018-9908FCD25E98"
-}
-cue_identifiers {
-  string: "6B57C125-D9BC-47B1-8212-578633C8B8A9"
-}
-cue_identifiers {
-  string: "9DB77D2C-7B26-49AF-84A1-513D55FBC9F5"
-}
-cue_identifiers {
-  string: "8A75BDCE-027B-45B6-99D1-2CB2779BBBFF"
-}
-}
-
 cues {
 uuid {
-  string: "82651C9F-3CDF-45B3-8BAA-AC529C1F06D5"
+  string: "7CCA1588-D16F-4212-B07A-910042651977"
 }
 hot_key {
 }
@@ -220,7 +236,7 @@ actions {
                 opacity: 1
                 enable: true
               }
-              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fswiss\\fcharset0 Helvetica;}\n{\\colortbl;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\slleading700\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs200 \\cf1 \\kerning1\\expnd20\\expndtw100\n\\outl0\\strokewidth-50 \\strokec0\n\\f0\\fs84 }"
+              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\deftab1680\n\\pard\\pardeftab1680\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs84 This is an example text}"
               vertical_alignment: VERTICAL_ALIGNMENT_MIDDLE
               margins {
               }
@@ -253,7 +269,7 @@ actions {
           height: 1080
         }
         uuid {
-          string: "6A0A3950-0985-11EF-A9CD-0800200C9A66"
+          string: "9400C07A-06EC-4588-9932-107BDEFB43C0"
         }
       }
       chord_chart {
@@ -267,7 +283,7 @@ isEnabled: true
 }
 cues {
 uuid {
-  string: "DB376151-02EC-4564-9018-9908FCD25E98"
+  string: "28DA96D5-0E47-48A0-B299-7DDAF8850C98"
 }
 hot_key {
 }
@@ -283,7 +299,7 @@ actions {
         elements {
           element {
             uuid {
-              string: "0BF0CD5C-5881-4095-9E4C-20E4AEE4D619"
+              string: "C425BA20-0982-11EF-A9CD-0800200C9A66"
             }
             name: "Text"
             bounds {
@@ -443,7 +459,7 @@ actions {
                 opacity: 1
                 enable: true
               }
-              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fswiss\\fcharset0 Helvetica;}\n{\\colortbl;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\slleading700\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs200 \\cf1 \\kerning1\\expnd20\\expndtw100\n\\outl0\\strokewidth-50 \\strokec0\n\\f0\\fs84 Bine-a\\u539\\'e2i venit azi la altar, \\u206\\'e2n casa Domnului Sf\\u226\\'e2nt\\\n S\\u259\\'e2 \\u238\\'e2mplini\\u539\\'e2i ce Dumnezeu, A r\\u226\\'e2nduit pe p\\u259\\'e2m\\u226\\'e2nt\\\n S\\u259\\'e2 v\\u259\\'e2 iubi\\u539\\'e2i \\u537\\'e2i s\\u259\\'e2 tr\\u259\\'e2i\\u539\\'e2i, spre slava lui Dumnezeu\\\n F\\u259\\'e2c\\u226\\'e2nd a\\u537\\'e2a, de ve\\u539\\'e2i lucra, ve\\u537\\'e2nic v\\u259\\'e2 ve\\u539\\'e2i bucura\\\n }"
+              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\deftab1680\n\\pard\\pardeftab1680\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs84 This is an example text}"
               vertical_alignment: VERTICAL_ALIGNMENT_MIDDLE
               margins {
               }
@@ -476,7 +492,7 @@ actions {
           height: 1080
         }
         uuid {
-          string: "61EB36C0-0985-11EF-A9CD-0800200C9A66"
+          string: "9400C07A-06EC-4588-9932-107BDEFB43C0"
         }
       }
       chord_chart {
@@ -490,7 +506,7 @@ isEnabled: true
 }
 cues {
 uuid {
-  string: "6B57C125-D9BC-47B1-8212-578633C8B8A9"
+  string: "01F2FD91-F109-48BF-80FA-EE1710F05644"
 }
 hot_key {
 }
@@ -506,7 +522,7 @@ actions {
         elements {
           element {
             uuid {
-              string: "0BF0CD5C-5881-4095-9E4C-20E4AEE4D619"
+              string: "CC1BD7F0-0982-11EF-A9CD-0800200C9A66"
             }
             name: "Text"
             bounds {
@@ -666,7 +682,7 @@ actions {
                 opacity: 1
                 enable: true
               }
-              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fswiss\\fcharset0 Helvetica;}\n{\\colortbl;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\slleading700\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs200 \\cf1 \\kerning1\\expnd20\\expndtw100\n\\outl0\\strokewidth-50 \\strokec0\n\\f0\\fs84 Domnul Isus s\\u259\\'e2 v\\u259\\'e2 dea pe deplin \\\n Pacea din ceruri \\u537\\'e2i harul divin\\\n Ve\\u537\\'e2nic iubirea s\\u259\\'e2 fie \\u238\\'e2n voi\\\n P\\u226\\'e2n\\u259\\'e2 \\u238\\'e2n ziua de-apoi\\\n }"
+              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\deftab1680\n\\pard\\pardeftab1680\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs84 This is an example text}"
               vertical_alignment: VERTICAL_ALIGNMENT_MIDDLE
               margins {
               }
@@ -699,7 +715,7 @@ actions {
           height: 1080
         }
         uuid {
-          string: "5C8BA250-0985-11EF-A9CD-0800200C9A66"
+          string: "9400C07A-06EC-4588-9932-107BDEFB43C0"
         }
       }
       chord_chart {
@@ -713,7 +729,7 @@ isEnabled: true
 }
 cues {
 uuid {
-  string: "9DB77D2C-7B26-49AF-84A1-513D55FBC9F5"
+  string: "AB061823-E304-492D-B3A0-75A985EBFCE1"
 }
 hot_key {
 }
@@ -729,7 +745,7 @@ actions {
         elements {
           element {
             uuid {
-              string: "0BF0CD5C-5881-4095-9E4C-20E4AEE4D619"
+              string: "D3AB6BC0-0982-11EF-A9CD-0800200C9A66"
             }
             name: "Text"
             bounds {
@@ -889,7 +905,7 @@ actions {
                 opacity: 1
                 enable: true
               }
-              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fswiss\\fcharset0 Helvetica;}\n{\\colortbl;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\slleading700\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs200 \\cf1 \\kerning1\\expnd20\\expndtw100\n\\outl0\\strokewidth-50 \\strokec0\n\\f0\\fs84 C\\u259\\'e2minul vost ne\\u238\\'e2ncetat Domnului s\\u259\\'e2-I \\u238\\'e2nchina\\u539\\'e2i\\\n Pe cel trudit pe cel lipsit mereu cu drag s-ajuta\\u539\\'e2i\\\n \\u536\\'e2i c\\u226\\'e2nd ve\\u539\\'e2i fi \\u238\\'e2n st\\u226\\'e2mtor\\u259\\'e2ri Domnul cel bun \\u537\\'e2i milos\\\n Va fi cu voi, va sprijinit m\\u226\\'e2na Lui Isus Hristos\\\n }"
+              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\deftab1680\n\\pard\\pardeftab1680\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs84 This is an example text}"
               vertical_alignment: VERTICAL_ALIGNMENT_MIDDLE
               margins {
               }
@@ -922,7 +938,7 @@ actions {
           height: 1080
         }
         uuid {
-          string: "4A67C630-0985-11EF-A9CD-0800200C9A66"
+          string: "9400C07A-06EC-4588-9932-107BDEFB43C0"
         }
       }
       chord_chart {
@@ -936,7 +952,7 @@ isEnabled: true
 }
 cues {
 uuid {
-  string: "8A75BDCE-027B-45B6-99D1-2CB2779BBBFF"
+  string: "606AE0AC-AC9D-45F2-93EA-C28175D1FC3E"
 }
 hot_key {
 }
@@ -952,7 +968,7 @@ actions {
         elements {
           element {
             uuid {
-              string: "0BF0CD5C-5881-4095-9E4C-20E4AEE4D619"
+              string: "DD8E6570-0982-11EF-A9CD-0800200C9A66"
             }
             name: "Text"
             bounds {
@@ -1112,7 +1128,7 @@ actions {
                 opacity: 1
                 enable: true
               }
-              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fswiss\\fcharset0 Helvetica;}\n{\\colortbl;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;}\n\\pard\\tx560\\tx1120\\tx1680\\tx2240\\tx2800\\tx3360\\tx3920\\tx4480\\tx5040\\tx5600\\tx6160\\tx6720\\slleading700\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs200 \\cf1 \\kerning1\\expnd20\\expndtw100\n\\outl0\\strokewidth-50 \\strokec0 Text\\\nText\\\nText\\\nText}"
+              rtf_data: "{\\rtf1\\ansi\\ansicpg1252\\cocoartf2761\n\\cocoatextscaling0\\cocoaplatform0{\\fonttbl\\f0\\fnil\\fcharset0 HelveticaNeue;}\n{\\colortbl;\\red255\\green255\\blue255;\\red255\\green255\\blue255;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c100000\\c100000\\c100000;}\n\\deftab1680\n\\pard\\pardeftab1680\\pardirnatural\\qc\\partightenfactor0\n\n\\f0\\fs84 This is an example text}"
               vertical_alignment: VERTICAL_ALIGNMENT_MIDDLE
               margins {
               }
@@ -1145,7 +1161,7 @@ actions {
           height: 1080
         }
         uuid {
-          string: "B6D8A880-0984-11EF-A9CD-0800200C9A66"
+          string: "9400C07A-06EC-4588-9932-107BDEFB43C0"
         }
       }
       chord_chart {
