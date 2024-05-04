@@ -11,20 +11,25 @@ import re
 from copy import copy
 import uuid
 import subprocess
+import codecs
 
 from uuid_pb2 import UUID
 
 romanian_char_unicode = {
     'Ș': '\\u536\\\'e2',
+    'Ş': '\\u350\\\'e2',
     'ș': '\\u537\\\'e2',
     'Ț': '\\u538\\\'e2',
+    'Ţ': '\\u354\\\'e2',
     'ț': '\\u539\\\'e2',
+    'ţ': '\\u355\\\'e2',
     'Â': '\\u194\\\'e2',
     'â': '\\u226\\\'e2',
     'Ă': '\\u258\\\'e2',
     'ă': '\\u259\\\'e2',
-    'Î': '\\u206\\\'e2',
+    'Ȋ': '\\u206\\\'e2',
     'î': '\\u238\\\'e2',
+    'ş': '\\u351\\\'e2',
     '\n': '\\\n '
 }
 
@@ -48,7 +53,7 @@ def get_font_size(text: str):
 
     max_length = len(max(lines, key=len))
 
-    if 30 > max_length > 50:
+    if max_length > 50:
         return rtf_font_size_64
     elif 30 > max_length > 24:
         return rtf_font_size_82
@@ -56,6 +61,23 @@ def get_font_size(text: str):
         return rtf_font_size_100
 
     return rtf_font_size_64
+
+
+def get_encoding(f):
+    f = open(f'sng_files/{f}', 'r', encoding='utf8')
+    while True:
+        try:
+            line = f.readline()
+        except UnicodeDecodeError:
+            f.close()
+            return'iso-8859-1'
+            break
+        if not line:
+            f.close()
+            return 'utf8'
+            break
+
+    return 'iso-8859-1'
 
 
 def decode_pro_presenter_template():
@@ -93,64 +115,74 @@ def convert_sng_to_pro_file(cue_template):
     for (dirpath, dirnames, files) in os.walk('sng_files'):
         for f in files:
             if f.endswith('.sng'):
-                with (file.open(f'sng_files/{f}', 'r') as fl):
-                    full_str = fl.read()
-                    verses_str = full_str[full_str.find('---'):].split('---')[1:]
+                encoding = get_encoding(f)
 
-                    cue = playlist.cues[0]
+                try:
+                    with (file.open(f'sng_files/{f}', 'r', encoding=encoding) as fl):
+                        full_str = fl.read()
 
-                    cues = []
+                        full_str = full_str.replace('--', '---')
 
-                    cue_group: presentation_pb2.Presentation.CueGroup = presentation_pb2.Presentation.CueGroup()
-                    cue_group.group.uuid.string = str(uuid.uuid4()).upper()
+                        verses_str = full_str[full_str.find('---'):].split('---')[1:]
 
-                    for verse in verses_str:
-                        cue_new = copy(cue)
-                        rtf_data_text = cue_new.actions[0].slide.presentation.base_slide.elements[
-                            0].element.text.rtf_data.decode('cp1252')
+                        cue = playlist.cues[0]
 
-                        rtf_data_desc = get_font_size(verse[1:-1])
+                        cues = []
 
-                        verse_str_unicoded = string_with_unicodes(verse[1:-1])
+                        cue_group: presentation_pb2.Presentation.CueGroup = presentation_pb2.Presentation.CueGroup()
+                        cue_group.group.uuid.string = str(uuid.uuid4()).upper()
 
-                        new_cue_uuid = str(uuid.uuid4()).upper()
+                        for verse in verses_str:
+                            cue_new = copy(cue)
+                            rtf_data_text = cue_new.actions[0].slide.presentation.base_slide.elements[
+                                0].element.text.rtf_data.decode('cp1252')
 
-                        cue_uuid = UUID()
-                        cue_uuid.string = new_cue_uuid.upper()
+                            rtf_data_desc = get_font_size(verse[1:-1])
 
-                        cue_new.uuid.string = new_cue_uuid
+                            verse_str_unicoded = string_with_unicodes(verse[1:-1])
 
-                        rtf_data_encoded = (rtf_data_desc + ("\n" + verse_str_unicoded + "}")
-                                            .replace("\\", "\\\\")
-                                            ).encode("cp1252")
+                            new_cue_uuid = str(uuid.uuid4()).upper()
 
-                        cue_new.actions[0].slide.presentation.base_slide.elements[
-                            0].element.text.rtf_data = rtf_data_encoded
+                            cue_uuid = UUID()
+                            cue_uuid.string = new_cue_uuid.upper()
 
-                        cue_new.actions[0].slide.presentation.base_slide.uuid.string = str(uuid.uuid4()).upper()
+                            cue_new.uuid.string = new_cue_uuid
 
-                        cues.append("\ncues {\n" + str(cue_new) + "\n}")
+                            # print("\n" + verse_str_unicoded)
 
-                        cue_group.cue_identifiers.append(cue_uuid)
+                            rtf_data_encoded = (rtf_data_desc + ("\n" + verse_str_unicoded + "}")
+                                                .replace("\\", "\\\\")
+                                                ).encode("cp1252")
 
-                    output_uuid = UUID()
-                    output_uuid.string = str(uuid.uuid4()).upper()
 
-                    filename = fl.name.replace("sng_files/", "").replace(".sng", "")
 
-                    output_filename = f"output_{f.replace('.sng', '').replace(' ', '-')}"
 
-                    file.open(f"./output/proto/{output_filename}.txt", "w").write(str(application_info)
-                                                                                  + "".join(
-                        "\nuuid {\n" + str(output_uuid) + "}\n")
-                                                                                  + "".join(f"\nname: \"{filename}\"")
-                                                                                  + "".join(
-                        "\ncue_groups {\n" + str(cue_group) + "}\n")
-                                                                                  + "".join(cues))
+                            cue_new.actions[0].slide.presentation.base_slide.uuid.string = str(uuid.uuid4()).upper()
 
-                    subprocess.Popen(
-                        f'protoc --encode=rv.data.Presentation ./propresenter.proto < ./../output/proto/{output_filename}.txt > ./../output/propresenter/{output_filename}.pro',
-                        shell=True, cwd="./proto_7")
+                            cues.append("\ncues {\n" + str(cue_new) + "\n}")
+
+                            cue_group.cue_identifiers.append(cue_uuid)
+
+                        output_uuid = UUID()
+                        output_uuid.string = str(uuid.uuid4()).upper()
+
+                        filename = fl.name.replace("sng_files/", "").replace(".sng", "")
+
+                        output_filename = f"{f.replace('.sng', '')}"
+
+                        file.open(f"./output/proto/{output_filename}.txt", "w").write(str(application_info)
+                                                                                      + "".join(
+                            "\nuuid {\n" + str(output_uuid) + "}\n")
+                                                                                      + "".join(f"\nname: \"{filename}\"")
+                                                                                      + "".join(
+                            "\ncue_groups {\n" + str(cue_group) + "}\n")
+                                                                                      + "".join(cues))
+
+                        #subprocess.Popen(
+                        #    f'protoc --encode=rv.data.Presentation ./propresenter.proto < "./../output/proto/{output_filename}.txt" > "./../output/propresenter/{output_filename}.pro"',
+                        #    shell=True, cwd="./proto_7")
+                except Exception as e:
+                    print("Error in files: " + f + ": " + str(e))
 
 
 def main():
